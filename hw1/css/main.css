@@ -1,0 +1,62 @@
+/*
+     Name: Jessica J. Hernandez
+     Date: June 03, 2015
+     Class & Section:  WIA-201506-01
+     Comments: "HTML5 Canvas Drawing"
+ */
+
+body {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    background: #E7F3A0;
+}
+
+#container {
+    width: 1213px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+canvas {
+    background: white;
+    border: 1px dashed #F3867B;
+}
+
+.drawings {
+    float: left;
+    margin: 20px 20px;
+    padding: 5px 30px 30px;
+    background: #F3E3BD;
+    border: 2px solid #F3867B;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 70%;
+    border-top: 1px solid #888;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    color: #74233A;
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #2D70C6;
+}
+
+.clear {
+    clear: both;
+}
+
+.bold {
+    font-weight: 900;
+    color: #888;
+}
+
