@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!--
+Jessica J. Hernandez
+ID: 0004631401
+June 18, 2015 - The Presentation
+Website Interaction & Animation | 201506-01
+Full Sail University
+-->
+
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+    
+    <div id="sideImages">
+        <div id="coffee">
+            <img src="../images/coffee.png" />
+        </div>
+        <div id="phone">
+            <img src="../images/phone.png" />
+        </div>
+    </div>
+
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div style="background-image:url(pages/1.jpg)"></div>
+                <div style="background-image:url(pages/2.jpg)"></div>
+                <div style="background-image:url(pages/3.jpg)"></div>
+                <div style="background-image:url(pages/4.jpg)"></div>
+                <div style="background-image:url(pages/5.jpg)"></div>
+                <div style="background-image:url(pages/6.jpg)"></div>
+                <div style="background-image:url(pages/7.jpg)"></div>
+                <div style="background-image:url(pages/8.jpg)"></div>
+                <div style="background-image:url(pages/9.jpg)"></div>
+                <div style="background-image:url(pages/10.jpg)"></div>
+                <div style="background-image:url(pages/11.jpg)"></div>
+                <div style="background-image:url(pages/12.jpg)"></div>
+                <div style="background-image:url(pages/13.jpg)"></div>
+                <div style="background-image:url(pages/14.jpg)"></div>
+                <div style="background-image:url(pages/15.jpg)"></div>
+                <div style="background-image:url(pages/16.jpg)"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        
+        function loadApp() {
+            // Keyboard arrow navigation
+            $(document).keydown(function(e){
+                var previous = 37, next = 39;
+
+                switch (e.keyCode) {
+                    case previous:  $('.flipbook').turn('previous');
+                                    break;
+
+                    case next:      $('.flipbook').turn('next');
+                                    break;
+                }
+            });
+
+
+            // Create the flipbook
+            $('.flipbook').turn({
+                    // Width
+                    width:906,
+
+                    // Height
+                    height:700,
+
+                    // Elevation
+                    elevation: 50,
+
+                    // Enable gradients
+                    gradients: true,
+
+                    // Auto center this flipbook
+                    autoCenter: true
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+        yepnope({
+            test : Modernizr.csstransforms,
+            yep: ['js/turn.min.js'],
+            nope: ['js/turn.html4.min.js'],
+            both: ['css/basic.css'],
+            complete: loadApp
+        });
+        
+    </script>
+
+</body>
+</html>

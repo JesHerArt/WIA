@@ -1,0 +1,104 @@
+<!doctype html>
+
+<!--
+Jessica J. Hernandez
+ID: 0004631401
+June 18, 2015 - The Presentation
+Website Interaction & Animation | 201506-01
+Full Sail University
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Presentation - turn.js</title>
+    <meta name="author" content="Jessica J. Hernandez">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/styles/dark.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+    
+    <link rel="icon" type="image/png" href="images/favicooon.png">
+</head>
+    
+<body>
+    
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            
+            <section>
+                <h1>turn.js</h1>
+                <h2>Presentation</h2>
+                <br><br>
+                <p>Jessica J. Hernandez<br>Full Sail University | WIA 201506-01</p>
+            </section>
+            
+            <section>
+                <h1>" What is turn.js? "</h1>
+            </section>
+            
+            <section>
+                <h1>" How does it work? "</h1>
+            </section>
+            
+            <section>
+                <h1>" Demo please? "</h1>
+            </section>
+            
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme || 'moon',
+            transition: Reveal.getQueryHash().transition || 'default',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+    </script>    
+    
+</body>
+</html>
