@@ -57,14 +57,110 @@ Full Sail University
             
             <section>
                 <h1>" What is turn.js? "</h1>
+                <br><br>
+                <ul>
+                    <li>JavaScript Library Plug-in</li>
+                    <li>Replicates the feel of turning pages on an actual book</li>
+                    <li>No Flash needed</li>
+                    <li>Implements Modinizr.js</li>
+                </ul>
             </section>
             
             <section>
                 <h1>" How does it work? "</h1>
+                <br><br>
+                <ul>
+                    <li>Each page is assigned to its own div</li>
+                    <li>By using a number naming convention it makes things easier to call</li>
+                    <li>A loadApp() function is implemented to set widths/heights</li>
+                    <li>CSS needs the widths/heights to be tweeked as well</li>
+                    <li>Modinizr.js is used to have polyfill fallbacks for browsers that cannot support it</li>
+                </ul>
             </section>
             
             <section>
-                <h1>" Demo please? "</h1>
+                <section>
+                    <h1>" Demo please? "</h1>
+                    <br>
+                    <p><a href="turn-js/index.html" target="_blank">&nbsp; > turn.js live demo < &nbsp;</a></p>
+                </section>
+
+                <section>
+                    <h2>Assigning pages to each div</h2>
+                    <pre><code>
+&lt;body&gt;
+&lt;div class="flipbook-viewport"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="flipbook"&gt;
+            &lt;div style="background-image:url(pages/1.jpg)"&gt;&lt;/div&gt;
+            &lt;div style="background-image:url(pages/2.jpg)"&gt;&lt;/div&gt;
+            &lt;div style="background-image:url(pages/3.jpg)"&gt;&lt;/div&gt;
+            &lt;div style="background-image:url(pages/4.jpg)"&gt;&lt;/div&gt;
+            &lt;div style="background-image:url(pages/5.jpg)"&gt;&lt;/div&gt;
+                .
+                ..
+                ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Implementing loadApp() function</h2>
+                    <pre><code>
+function loadApp() {
+
+    // Create the flipbook
+    $('.flipbook').turn({
+        width:906,
+        height:700,
+        elevation: 50,
+        gradients: true,
+        autoCenter: true
+    });   
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Implementing Keyboard Navigation</h2>
+                    <pre><code>
+    // Keyboard arrow navigation
+    $(document).keydown(function(e){
+        var previous = 37, next = 39;
+
+        switch (e.keyCode) {
+            case previous:  $('.flipbook').turn('previous');
+                            break;
+            case next:      $('.flipbook').turn('next');
+                            break;
+        }
+    }); 
+
+} //End loadApp() function
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Implementing loadApp() function</h2>
+                    <pre><code>
+    // Use the HTML4 version when css transforms aren't supported
+    yepnope({
+        test : Modernizr.csstransforms,
+        yep: ['js/turn.min.js'],
+        nope: ['js/turn.html4.min.js'],
+        both: ['css/basic.css'],
+        complete: loadApp
+    });
+                    </code></pre>
+                </section>
+            </section>
+            
+            <section>
+                <h2>Thank you for watching!</h2>
+                <br><br>
+                <p>Have a nice summer!</p>
             </section>
             
         </div>
@@ -94,8 +190,6 @@ Full Sail University
                 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                 { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
                 { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
             ]
         });
     </script>    
