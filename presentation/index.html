@@ -105,6 +105,8 @@ Full Sail University
 &lt;/div&gt;
 &lt;/body&gt;
                     </code></pre>
+                    <br>
+                    <small>Keep in mind that jQuery and Modinizr gets called in the &lt;head&gt; tag<br>and the rest of the scripts get called before the ending of the &lt;body&gt; tag</small>
                 </section>
 
                 <section>
@@ -120,6 +122,26 @@ function loadApp() {
         gradients: true,
         autoCenter: true
     });   
+                    </code></pre>
+                </section>
+                
+                <section>
+                    <h2>Altering CSS</h2>
+                    <pre><code>
+.flipbook-viewport .flipbook{
+	width:906px;
+	height:700px;
+	left:-453px;
+	top:-350px;
+}
+
+.flipbook-viewport .page{
+	width:453px;
+	height:700px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}  
                     </code></pre>
                 </section>
 
@@ -143,7 +165,7 @@ function loadApp() {
                 </section>
 
                 <section>
-                    <h2>Implementing loadApp() function</h2>
+                    <h2>Implementing Modinizr.js with yepnope</h2>
                     <pre><code>
     // Use the HTML4 version when css transforms aren't supported
     yepnope({
