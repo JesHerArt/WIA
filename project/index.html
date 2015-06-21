@@ -1,0 +1,279 @@
+<!doctype html>
+
+<!--
+Jessica J. Hernandez
+ID: 0004631401
+June 25, 2015 - The Project
+Website Interaction & Animation | 201506-01
+Full Sail University
+-->
+
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Sonic Swirl Ice Cream</title>
+    <meta name="author" content="Jessica J. Hernandez">
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Martel+Sans:200,400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS: Normalize | Carousel | Fancybox | Chart | Main -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+    <!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/chart_ie.css" />
+		<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    
+    <!-- Favicon -->
+    
+</head>
+
+<body>
+    <div id="container">
+        <div id="top"></div>
+        
+        <!-- AUDIO -->
+        <div id="music">
+            <audio>
+                <source src="" type="audio/mpeg" />
+                <source src="" type="audio/ogg" />
+                Audio not supported
+            </audio>
+        </div>
+    
+        <!-- HEADER & NAVIGATION -->
+        <header>
+            <!-- includes logo, navigation and audio -->
+            <div id="logo">
+                <h1>Sonic Swirl Ice Cream</h1>
+                <a href="index.html"><img src="images/logo-pill.png" alt="Sonic Swirl Ice Cream Logo" title="Sonic Swirl Ice Cream Logo" ></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <a href="#about"><li>About Us</li></a>
+                    <a href="#gallery"><li>Meet The Swirls</li></a>
+                    <a href="#flavors"><li>Top Flavors</li></a>
+                    <a href="#locations"><li>Locations</li></a>
+                    <a href="#contact-form"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header> <!-- close the header/nav -->
+
+
+        <!-- CTA -->
+        <div id="cta">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li style="background: url('../images/img1.jpg');"></li>
+                        <li style="background: url('../images/img2.jpg');"></li>
+                        <li style="background: url('../images/img3.jpg');"></li>
+                        <li style="background: url('../images/img4.jpg');"></li>
+                        <li style="background: url('../images/img5.jpg');"></li>
+                        <li style="background: url('../images/img6.jpg');"></li>
+                    </ul>
+                </div>
+
+                <p class="photo-credits">
+                    Photos by <a href="http://www.mw-fotografie.de">Name Here</a>
+                </p>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            </div>
+        </div> <!-- close cta div -->
+
+
+        <!-- ABOUT US -->
+        <div id="about">
+            <div id="details">
+                <h2><img src="images/cherry.png"> About Us</h2>
+                
+                <div class="detail-col">
+                    <h3>Who are we?</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.</p>
+                </div>
+
+                <div class="detail-col">
+                    <h3>Our Mission</h3>
+                    <p>Cnon numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                </div>
+
+                <div class="detail-col">
+                    <h3>Plans to Expand</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                </div>
+            </div>
+        </div> <!-- close about div -->
+
+
+        <!-- THE SWIRLS -->
+        <div id="gallery">
+            <div id="images">
+                <h2><img src="images/cherry.png"> Meet The Swirls</h2>
+                <p>Click images to view them in a full size gallery</p>
+                
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/1.jpg" title="">
+                        <img src="images/1.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/2.jpg" title="">
+                        <img src="images/2.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/3.jpg" title="">
+                        <img src="images/3.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/4.jpg" title="">
+                        <img src="images/4.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/5.jpg" title="">
+                        <img src="images/5.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/6.jpg" title="">
+                        <img src="images/6.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/1.jpg" title="">
+                        <img src="images/1.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/2.jpg" title="">
+                        <img src="images/2.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/3.jpg" title="">
+                        <img src="images/3.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/4.jpg" title="">
+                        <img src="images/4.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/5.jpg" title="">
+                        <img src="images/5.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+                <div class="photo">
+                    <a class= "fancybox" rel="group1" href="images/6.jpg" title="">
+                        <img src="images/6.jpg" alt="" >
+                    </a>
+                    <p>Flavor Name</p>
+                </div>
+            </div>
+        </div> <!-- close gallery div -->
+
+
+        <!-- TOP FLAVORS -->
+        <div id="flavors">
+            <div id="i-cream-data">
+                <h2><img src="images/cherry.png"> Top Flavors</h2>
+                
+                <div class="chart-container">
+                    <div class="chart-title">
+                        <!--<h3>Sales per Department</h3>-->
+                        <p>Percentages based on a survey of 1000 customers from 2014</p>
+                    </div>
+                    <div class="chart-content">
+                        <div class="chart-y-axis">
+                            <p style="top:0px;">100</p>
+                            <p style="bottom:225px;">75</p>
+                            <p style="bottom:150px;">50</p>
+                            <p style="bottom:75px;">25</p>
+                            <p style="bottom:0px;">0</p>
+                        </div>
+                        <div class="chart-area" bar-spacing="30">
+                            <div bar-value="376" label="Flavor One"   class="chart-bar sporting"></div>
+                            <div bar-value="621" label="Flavor Two" class="chart-bar hoursewares"></div>
+                            <div bar-value="521" label="Flavor Three"   class="chart-bar shipping"></div>
+                            <div bar-value="832" label="Flavor Four"   class="chart-bar clothing"></div>
+                            <div bar-value="418" label="Flavor Five"    class="chart-bar jewelry"></div>
+                        </div>
+                        <div class="chart-x-axis"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div> <!-- close flavors div -->
+
+
+        <!-- LOCATIONS -->
+        <div id="locations">
+            <div id="map-section">
+                <h2><img src="images/cherry.png"> Locations</h2>
+            
+            </div>
+        </div><!-- close location div -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="foot-nav">
+            
+            </div>
+            
+            <form id="contact-form">
+                <h2><img src="images/cherry.png"> Contact Us</h2>
+            
+            </form>
+        </footer> <!-- close the footer -->
+    
+    </div> <!-- close container div -->
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!-- Carousel Plug-in (http://sorgalla.com/jcarousel/) -->
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.transitions.js"></script>
+    
+    <!-- Image gallery with fancybox plug-in -->
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    
+    <!-- Chart.js -->
+    <script type="text/javascript" src="js/chart.js"></script>
+    
+    <!-- Main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

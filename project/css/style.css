@@ -1,0 +1,234 @@
+/*
+    Jessica J. Hernandez
+    ID: 0004631401
+    June 25, 2015 - The Project
+    Website Interaction & Animation | 201506-01
+    Full Sail University
+*/
+
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+header {
+    width: 98%;
+    padding: 1%;
+    box-shadow: 0px 0px 6px #666; 
+    overflow: auto;
+    z-index: 1000;
+    position: relative;
+}
+
+#cta {
+    background: #EF746F;
+    padding: 5% 0;
+}
+
+#about {
+    padding: 7% 0;
+    background: #FCF3CD;
+}
+
+#flavors {
+    background: #F0FCBE;
+    padding: 7% 0;
+}
+
+#i-cream-data {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+
+/* _____________________________________ */
+/*               NAVIGATION              */
+/* _____________________________________ */
+
+nav {
+    font-family: 'Martel Sans', sans-serif;
+    text-transform: uppercase;
+    float: right;
+    width: 59%;
+    font-size: 170%;
+    font-weight: 200;
+    margin-top: 1.5%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 -2px;
+    display: inline-block;
+    padding: 1.3% 2% 1% 2%;
+    border-bottom: 2px solid white;
+    color: #F92A57;
+}
+
+nav li:hover {
+    color: #23DAC8;
+    border-bottom: 2px solid #F9D423;
+}
+
+#locations {
+    background: #FDE8E9;
+    padding: 5% 0;
+}
+
+#map-section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+
+h1 {
+    position: absolute;
+    left: -9999px;
+}
+
+h2 {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 200;
+    font-size: 500%;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+}
+
+h3 {
+    color: #FDB742;
+    font-size: 180%;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+#details {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.detail-col {
+    padding: 1% 3%;
+    display: inline-block;
+    width: 26.98%;
+    height: 416px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.detail-col:nth-child(3) {
+    border-left: 1px solid #23DAC8;
+    border-right: 1px solid #23DAC8;
+}
+
+.detail-col p {
+    line-height: 2.5em;
+    font-size: 104%;
+}
+
+
+
+
+/* _____________________________________ */
+/*            LISTS & TABLES             */
+/* _____________________________________ */
+
+
+
+
+
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+
+img {
+	max-width: 100%;
+}
+
+#logo {
+    width: 30%;
+    float: left;
+}
+
+#gallery {
+    padding: 4% 0;
+    background: #23DAC8;
+}
+
+#images {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.photo {
+    display: inline-block;
+    width: 14.4%;
+    margin: 0;
+    padding: 1%;
+}
+
+.photo p {
+    text-align: center;
+}
+
+
+
+
+/* _____________________________________ */
+/*                 FORMS                 */
+/* _____________________________________ */
+
+
+
+
+
+/* _____________________________________ */
+/*             MEDIA QUERIES             */
+/* _____________________________________ */
+
+@media only screen
+    and (max-width : 899px) {
+     
+      
+        
+    }
+	
+	
+@media only screen
+	and (max-width : 767px) {
+        
+       
+        
+	}
+
+
+@media only screen
+	and (max-width : 580px) {
+        
+        
+        
+    }
+
+
+@media only screen 
+	and (max-width: 414px) {
+        
+        
+
+	}
