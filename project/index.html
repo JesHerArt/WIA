@@ -19,7 +19,7 @@ Full Sail University
     <meta name="author" content="Jessica J. Hernandez">
     
     <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -39,6 +39,7 @@ Full Sail University
     <script type="text/javascript" src="js/modernizr.js"></script>
     
     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
 </head>
 
@@ -60,7 +61,9 @@ Full Sail University
             <!-- includes logo, navigation and audio -->
             <div id="logo">
                 <h1>Sonic Swirl Ice Cream</h1>
-                <a href="index.html"><img src="images/logo-pill.png" alt="Sonic Swirl Ice Cream Logo" title="Sonic Swirl Ice Cream Logo" ></a>
+                <a href="index.html">
+                    <img src="images/logo-pill.png" alt="Sonic Swirl Ice Cream Logo" title="Sonic Swirl Ice Cream Logo" >
+                </a>
             </div>
             
             <nav>
@@ -80,17 +83,17 @@ Full Sail University
             <div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
-                        <li style="background: url('../images/img1.jpg');"></li>
-                        <li style="background: url('../images/img2.jpg');"></li>
-                        <li style="background: url('../images/img3.jpg');"></li>
-                        <li style="background: url('../images/img4.jpg');"></li>
-                        <li style="background: url('../images/img5.jpg');"></li>
-                        <li style="background: url('../images/img6.jpg');"></li>
+                        <li style="background: url('images/img1.jpg');"></li>
+                        <li style="background: url('images/img2.jpg');"></li>
+                        <li style="background: url('images/img3.jpg');"></li>
+                        <li style="background: url('images/img4.jpg');"></li>
+                        <li style="background: url('images/img5.jpg');"></li>
+                        <li style="background: url('images/img6.jpg');"></li>
                     </ul>
                 </div>
 
                 <p class="photo-credits">
-                    Photos by <a href="http://www.mw-fotografie.de">Name Here</a>
+                    Photos by <a href="">Name Here</a>
                 </p>
 
                 <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
@@ -241,7 +244,45 @@ Full Sail University
         <div id="locations">
             <div id="map-section">
                 <h2><img src="images/cherry.png"> Locations</h2>
-            
+                
+                <div class="map_container">
+                    <img src="images/florida.png" alt="" title="" />
+                    
+                    <!-- Dots -->
+                    <a class="dot" style="bottom:40px;  right:50px;" city="homestead"></a>
+                </div>
+                
+                <div id="detail_container">
+				    <div class="location-details">
+                        <h3>Choose a city</h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+				    </div>
+                </div>
+                
+                
+                <div class="city_detail_container">
+                    <!-- Location -->
+                    <div class="location_detail" id="    location_name    ">
+                        <div class="location_info">
+                            <h3>Location Name</h3>
+                            <p>Street Address</p>
+                            <p>City, State Zip</p>
+                            <p>Phone Number</p>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="location_detail" id="    location_name    ">
+                        <div class="location_info">
+                            <h3>Location Name</h3>
+                            <p>Street Address</p>
+                            <p>City, State Zip</p>
+                            <p>Phone Number</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div><!-- close location div -->
 
@@ -250,13 +291,58 @@ Full Sail University
         <footer>
             <div id="foot-contents">
                 <div id="foot-nav">
-
+                    <h2><img src="images/cherry.png"> Sonic Swirl Ice Cream</h2>
+                    <div id="links">
+                        <ul>
+                            <a href="#top"><li>Back to Top</li></a>
+                            <a href="#about"><li>About Us</li></a>
+                            <a href="#gallery"><li>Meet The Swirls</li></a>
+                            <a href="#flavors"><li>Top Flavors</li></a>
+                            <a href="#locations"><li>Locations</li></a>
+                            <a href="#contact-form"><li>Contact</li></a>
+                        </ul>
+                    </div>
+                    
+                    <div id="ss-details">
+                        <img src="images/logo-pill.png" alt="Sonic Swirl Ice Cream Logo" title="Sonic Swirl Ice Cream Logo">
+                        <p>Corporate</p>
+                        <p>address</p>
+                        <p>city, state zip</p>
+                        <p>number</p>
+                        <p>email</p>
+                    </div>
+                    
+                    <div id="social-media">
+                        <a href="http://www.facebook.com" target="_blank">
+                            <img src="images/facebook.png" alt="" title="" />
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <img src="images/twitter.png" alt="" title="" />
+                        </a>
+                        <a href="http://www.snapchat.com" target="_blank">
+                            <img src="images/snapchat.png" alt="" title="" />
+                        </a>
+                        <a href="http://www.vine.co" target="_blank">
+                            <img src="images/vine.png" alt="" title="" />
+                        </a>
+                        <a href="http://www.googleplus.com" target="_blank">
+                            <img src="images/googleplus.png" alt="" title="" />
+                        </a>
+                    </div>
                 </div>
 
                 <form id="contact-form">
                     <h2><img src="images/cherry.png"> Contact Us</h2>
-
+                    
+                    <input type="text" name="name" placeholder="Full Name" />
+                    <input type="email" name="email" placeholder="Email address" />
+                    <textarea>Drop us a line...</textarea>
+                    
+                    <input type="submit" name="submit-btn" value="S U B M I T" />
                 </form>
+                
+                <p id="course-info">&copy; 2015 Jessica J. Hernandez - Student at Full Sail University<br>
+                    Website Interaction &amp; Animation Course Project | WDD333-O 201506-01</p>
             </div>
         </footer> <!-- close the footer -->
     

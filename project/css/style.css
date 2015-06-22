@@ -48,13 +48,37 @@ header {
 }
 
 footer {
-    padding: 5% 0;
+    padding: 8% 0 4% 0;
     background: #333;
+    color: #fff;
+    position: relative;
 }
 
 #foot-contents {
     width: 85%;
     margin: 0 auto;
+}
+
+#foot-nav {
+    width: 56%;
+    border-right: 1px solid #fff;
+}
+
+#contact-form {
+    padding-left: 3%;
+    width: 40%;
+    vertical-align: top;
+}
+
+#foot-nav, #contact-form, #links, #ss-details {
+    display: inline-block;
+}
+
+#links, #ss-details {
+    width: 37%;
+    padding-left: 12%;
+    vertical-align: middle;
+    margin-bottom: 7%;
 }
 
 
@@ -93,13 +117,38 @@ nav li:hover {
 }
 
 #locations {
-    background: #FDE8E9;
-    padding: 5% 0;
+    background: #F99191 ;
+    padding: 3% 0;
 }
 
 #map-section {
     width: 85%;
     margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 130%;
+}
+
+footer ul li {
+    padding: 2% 2%;
+}
+
+#links a:link, #links a:visited {
+    color: #23DAC8;
+    text-decoration: none;
+}
+
+#links a:hover li {
+    color: #F9D423;
+    background: #555;
+}
+
+#social-media a:link, #social-media a:visited {
+    text-decoration: none;
 }
 
 
@@ -124,6 +173,7 @@ h2 {
 
 footer h2 {
     color: #fff;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -156,6 +206,14 @@ h3 {
     font-size: 104%;
 }
 
+#course-info {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.11em;
+    font-size: 90%;
+    text-align: center;
+    padding-top: 40px;
+}
 
 
 
@@ -201,6 +259,66 @@ img {
     text-align: center;
 }
 
+#social-media {
+    width: 45%;
+    margin: 0 auto;
+}
+
+#social-media img {
+    margin-right: 10px;
+}
+
+#ss-details img {
+    width: 80%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* _____________________________________ */
+/*                  MAP                  */
+/* _____________________________________ */
+
+.map_container {
+    width: 53%;
+    position: relative;
+    margin-top: 20px;
+    padding-right: 3%;
+    border-right: 1px solid black;
+    display: inline-block;
+}
+
+#detail_container {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    background: yellow;
+    padding: 3% 3% 3% 7%;
+    margin-top: 20px;
+}
+
+.map_container a.dot {
+	background-image: url(../images/markers.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 34px;
+	width: 34px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+}
+
+.map_container a.dot.selected {
+	background-position: 68px 34px;
+}
+
+.map_container a.dot:hover {
+	background-position: 10px 34px;
+}
+
 
 
 
@@ -208,8 +326,48 @@ img {
 /*                 FORMS                 */
 /* _____________________________________ */
 
+input[type="text"], input[type="email"] {
+    width: 93%;
+    padding: 3%;
+    margin-bottom: 3%;
+    border: 2px solid #F9D423;
+    color: #F92A57;
+    letter-spacing: 0.1em;
+    background: white;
+}
 
+input[type="email"] {
+    color: #B3CC57;
+}
 
+textarea {
+	width: 93%;
+	height: 60px;
+	border: none;
+	padding: 3%;
+    border: 2px solid #F9D423;
+    color: #23DAC8;
+    letter-spacing: 0.1em;
+    margin-bottom: 3%;
+    background: white;
+}
+ 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: 0;
+    border: 2px solid #FDB742;
+}
+
+input[type="submit"] {
+    color: white;
+    padding: 2% 4%;
+    float: right;
+    background: #EF746F;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background: #EF5E5E;
+}
 
 
 /* _____________________________________ */
