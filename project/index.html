@@ -205,87 +205,252 @@ Full Sail University
                 </div>
             </div>
         </div> <!-- close gallery div -->
-
-
-        <!-- TOP FLAVORS -->
-        <div id="flavors">
-            <div id="i-cream-data">
-                <h2><img src="images/cherry.png"> Top Flavors</h2>
-                
-                <div class="chart-container">
-                    <div class="chart-title">
-                        <!--<h3>Sales per Department</h3>-->
-                        <p>Percentages based on a survey of 1000 customers from 2014</p>
-                    </div>
-                    <div class="chart-content">
-                        <div class="chart-y-axis">
-                            <p style="top:0px;">100</p>
-                            <p style="bottom:225px;">75</p>
-                            <p style="bottom:150px;">50</p>
-                            <p style="bottom:75px;">25</p>
-                            <p style="bottom:0px;">0</p>
-                        </div>
-                        <div class="chart-area" bar-spacing="30">
-                            <div bar-value="376" label="Flavor One"   class="chart-bar sporting"></div>
-                            <div bar-value="621" label="Flavor Two" class="chart-bar hoursewares"></div>
-                            <div bar-value="521" label="Flavor Three"   class="chart-bar shipping"></div>
-                            <div bar-value="832" label="Flavor Four"   class="chart-bar clothing"></div>
-                            <div bar-value="418" label="Flavor Five"    class="chart-bar jewelry"></div>
-                        </div>
-                        <div class="chart-x-axis"></div>
-                    </div>
-                </div>
-            </div>
         
-        </div> <!-- close flavors div -->
-
-
-        <!-- LOCATIONS -->
-        <div id="locations">
-            <div id="map-section">
-                <h2><img src="images/cherry.png"> Locations</h2>
+        
+        
+        <!-- LOCATIONS & TOP FLAVORS -->
+        <div id="loc_flav">
                 
-                <div class="map_container">
-                    <img src="images/florida.png" alt="" title="" />
+                <div id="locations">
+                    <h2><img src="images/cherry.png"> Locations</h2>
                     
-                    <!-- Dots -->
-                    <a class="dot" style="bottom:40px;  right:50px;" city="homestead"></a>
-                </div>
-                
-                <div id="detail_container">
-				    <div class="location-details">
-                        <h3>Choose a city</h3>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-				    </div>
-                </div>
-                
-                
-                <div class="city_detail_container">
-                    <!-- Location -->
-                    <div class="location_detail" id="    location_name    ">
-                        <div class="location_info">
-                            <h3>Location Name</h3>
-                            <p>Street Address</p>
-                            <p>City, State Zip</p>
-                            <p>Phone Number</p>
+                    <div class="map_container">
+                        <img src="images/florida.png" alt="" title="" />
+
+                        <!-- Dots -->
+                        <a class="dot" style="bottom:40px;  right:20px;" city="homestead"></a>
+                        <a class="dot" style="bottom:80px;  right:10px;" city="miami_gardens"></a>
+                        <a class="dot" style="bottom:110px;  right:-6px;" city="ft_lauderdale"></a>
+                        <a class="dot" style="bottom:110px;  right:99px;" city="naples"></a>
+                        <a class="dot" style="bottom:180px;  right:106px;" city="arcadia"></a>
+                        <a class="dot" style="bottom:235px;  right:142px;" city="brandon"></a>
+                        <a class="dot" style="bottom:200px;  right:15px;" city="ft_pierce"></a>
+                        <a class="dot" style="bottom:280px;  right:90px;" city="orlando"></a>
+                        <a class="dot" style="bottom:270px;  right:40px;" city="cocoa"></a>
+                        <a class="dot" style="bottom:340px;  right:140px;" city="ocala"></a>
+                        <a class="dot" style="top:70px;  right:85px;" city="augustine"></a>
+                        <a class="dot" style="top:40px;  right:165px;" city="lake_city"></a>
+                        <a class="dot" style="top:50px;  right:225px;" city="perry"></a>
+                        <a class="dot" style="top:40px;  right:280px;" city="crawfordville"></a>
+                        <a class="dot" style="top:10px;  right:275px;" city="tallahassee"></a>
+                        <a class="dot" style="top:40px;  left:145px;" city="panama_city"></a>
+                        <a class="dot" style="top:-6px;  left:100px;" city="crestview"></a>
+                        <a class="dot" style="top:0;  left:30px;" city="milton"></a>
+                        <a class="dot" style="top:10px;  right:103px;" city="yulee"></a>
+                        
+                        <div class="detail_container">
+                            <div class="location_detail">
+                                <h3 class="choose_city">Choose a city</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="city_detail_container">
+                        <!-- Location -->
+                        <div class="location_detail" id="homestead">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Homestead</h3></div>
+                                <p>2425 NE 8th St<br>
+                                    Homestead, FL 33033<br>
+                                    (305) 242-1000</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="miami_gardens">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Miami Gardens</h3></div>
+                                <p>2660 NW 199th St<br>
+                                    Miami Gardens, FL 33056<br>
+                                    (305) 242-1001</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="ft_lauderdale">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Ft. Lauderdale</h3></div>
+                                <p>8188 West Commercial Blvd<br>
+                                    Lauderhill, FL 33351<br>
+                                    (954) 242-1002</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="naples">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Naples</h3></div>
+                                <p>3585 Tamiami Trail E<br>
+                                    Naples, FL 34112<br>
+                                    (239) 242-1003</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="arcadia">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Arcadia</h3></div>
+                                <p>2729 SE Seminole Ave<br>
+                                    Arcadia, FL 34266<br>
+                                    (863) 242-1004</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="brandon">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Brandon</h3></div>
+                                <p>1230 E Brandon Blvd<br>
+                                    Brandon, FL 33511<br>
+                                    (813) 242-1005</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="ft_pierce">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Fort Pierce</h3></div>
+                                <p>2551 S Jenkins Rd<br>
+                                    Fort Pierce, FL 34947<br>
+                                    (772) 242-1006</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="orlando">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Orlando</h3></div>
+                                <p>5399 International Dr<br>
+                                    Orlando, FL 32819<br>
+                                    (407) 242-1007</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="cocoa">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Cocoa</h3></div>
+                                <p>1112 Clearlake Rd<br>
+                                    Cocoa, FL 32922<br>
+                                    (321) 242-1008</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="ocala">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Ocala</h3></div>
+                                <p>2401 SW 19th Avenue Rd<br>
+                                    Ocala, FL 34471<br>
+                                    (352) 242-1009</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="augustine">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Augustine</h3></div>
+                                <p>704 E Geoffrey St<br>
+                                    St. Augustine, FL 32086<br>
+                                    (904) 242-1010</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="lake_city">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Lake City</h3></div>
+                                <p>1333 SW Main Blvd<br>
+                                    Lake City, FL 32025<br>
+                                    (386) 242-1011</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="perry">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Perry</h3></div>
+                                <p>1950 S Jefferson St<br>
+                                    Perry, FL 32348<br>
+                                    (850) 242-1012</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="crawfordville">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Crawfordville</h3></div>
+                                <p>2859 Crawfordville Hwy<br>
+                                    Crawfordville, FL 32327<br>
+                                    (850) 242-1013</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="tallahassee">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Tallahassee</h3></div>
+                                <p>1510 N Monroe St<br>
+                                    Tallahassee, FL 32303<br>
+                                    (850) 242-1014</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="panama_city">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Panama City</h3></div>
+                                <p>238 N Tyndall Pkwy<br>
+                                    Panama City, FL 32404<br>
+                                    (850) 242-1015</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="crestview">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Crestview</h3></div>
+                                <p>1230 N Ferdon Blvd<br>
+                                    Crestview, FL 32536<br>
+                                    (850) 242-1016</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="milton">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Milton</h3></div>
+                                <p>6173 US-90<br>
+                                    Milton, FL 32570<br>
+                                    (850) 242-1017</p>
+                            </div>
+                        </div>
+                        <!-- Location -->
+                        <div class="location_detail" id="yulee">
+                            <div class="location_info">
+                                <div><img src="images/ss-small-logo.png"><h3>Yulee</h3></div>
+                                <p>463939 FL-200<br>
+                                    Yulee, FL 32097<br>
+                                    (800) 242-1017</p>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Location -->
-                    <div class="location_detail" id="    location_name    ">
-                        <div class="location_info">
-                            <h3>Location Name</h3>
-                            <p>Street Address</p>
-                            <p>City, State Zip</p>
-                            <p>Phone Number</p>
+                </div><!-- close location div -->
+                
+                <div id="flavors">
+                    <h2><img src="images/cherry.png"> Top Flavors</h2>
+                    
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    
+                    <div class="chart-container">
+                        <div class="chart-title">
+                            <!--<h3>Sales per Department</h3>-->
+                            <p>Percentages based on a survey of 1000 customers from 2014</p>
+                        </div>
+                        <div class="chart-content">
+                            <div class="chart-y-axis">
+                                <p style="top:0px;">100</p>
+                                <p style="bottom:225px;">75</p>
+                                <p style="bottom:150px;">50</p>
+                                <p style="bottom:75px;">25</p>
+                                <p style="bottom:0px;">0</p>
+                            </div>
+                            <div class="chart-area" bar-spacing="30">
+                                <div bar-value="376" label="Flavor One"   class="chart-bar sporting"></div>
+                                <div bar-value="621" label="Flavor Two" class="chart-bar hoursewares"></div>
+                                <div bar-value="521" label="Flavor Three"   class="chart-bar shipping"></div>
+                                <div bar-value="832" label="Flavor Four"   class="chart-bar clothing"></div>
+                                <div bar-value="418" label="Flavor Five"    class="chart-bar jewelry"></div>
+                            </div>
+                            <div class="chart-x-axis"></div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div><!-- close location div -->
-
+                </div><!-- close flavors div -->
+        </div><!-- close loc_flav div -->
 
         <!-- FOOTER -->
         <footer>

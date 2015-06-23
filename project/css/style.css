@@ -37,21 +37,12 @@ header {
     background: #FCF3CD;
 }
 
-#flavors {
-    background: #F0FCBE;
-    padding: 7% 0;
-}
-
-#i-cream-data {
-    width: 85%;
-    margin: 0 auto;
-}
-
 footer {
     padding: 8% 0 4% 0;
     background: #333;
     color: #fff;
     position: relative;
+    clear: both;
 }
 
 #foot-contents {
@@ -80,6 +71,32 @@ footer {
     vertical-align: middle;
     margin-bottom: 7%;
 }
+
+
+#loc_flav {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+#locations, #flavors {
+    padding: 5% 0;
+    width: 38.5%;
+    float: left;
+}
+
+#locations {
+    background: #F99191;
+    padding-left: 7.5%;
+    padding-right: 4%;
+}
+
+#flavors {
+    background: #FCF3CD;
+    padding-right: 7.5%;
+    padding-left: 4%;
+}
+
 
 
 
@@ -114,16 +131,6 @@ nav li {
 nav li:hover {
     color: #23DAC8;
     border-bottom: 2px solid #F9D423;
-}
-
-#locations {
-    background: #F99191 ;
-    padding: 3% 0;
-}
-
-#map-section {
-    width: 85%;
-    margin: 0 auto;
 }
 
 footer ul {
@@ -283,42 +290,76 @@ img {
 /* _____________________________________ */
 
 .map_container {
-    width: 53%;
+    width: 100%;
     position: relative;
     margin-top: 20px;
-    padding-right: 3%;
-    border-right: 1px solid black;
-    display: inline-block;
 }
 
-#detail_container {
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-    background: yellow;
-    padding: 3% 3% 3% 7%;
-    margin-top: 20px;
+.detail_container {
+    position: absolute;
+    left: 20px;
+    top: 290px;
+    width: 43%;
+    padding: 3% 3%;
+    border: 3px solid #B3CC57;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(249, 42, 87, 0.4);
 }
 
 .map_container a.dot {
 	background-image: url(../images/markers.png);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
+    width: 34px;
 	height: 34px;
-	width: 34px;
 	display: block;
 	position: absolute;
 	cursor: pointer;
 }
 
-.map_container a.dot.selected {
-	background-position: 68px 34px;
-}
-
 .map_container a.dot:hover {
-	background-position: 10px 34px;
+	background-position: -34px 0px;
 }
 
+.map_container a.dot.selected {
+	background-position: -68px 0px;
+}
+
+.city_detail_container {
+    display: none;
+}
+
+.city_detail_container .location_detail {
+    
+}
+
+.map_container .location_info h3 img {
+    clear: both;
+}
+
+.map_container .location_info h3 { 
+    color: #23DAC8;
+    position: absolute;
+    top: 6px;
+    left: 55px;
+}
+
+.choose_city {
+    color: #23DAC8;
+}
+
+.map_container p { 
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 120%;
+    margin-bottom: 0;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+.detail_container .location_detail {
+    
+}
 
 
 
