@@ -29,7 +29,7 @@ header {
 
 #cta {
     background: #EF746F;
-    padding: 5% 0;
+    padding: 6% 0;
 }
 
 #about {
@@ -80,7 +80,7 @@ footer {
 }
 
 #locations, #flavors {
-    padding: 5% 0;
+    padding: 7% 0;
     width: 38.5%;
     float: left;
 }
@@ -225,10 +225,30 @@ h3 {
 
 
 /* _____________________________________ */
-/*            LISTS & TABLES             */
+/*                AUDIO                  */
 /* _____________________________________ */
 
+#music {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    background-image: url(../images/speaker_off.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+	background-position: 8px 6px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 0px 6px #555; 
+    z-index: 1000;
+    border-radius: 100px;
+    opacity: 0.5;
+}
 
+#music:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
 
 
 
@@ -246,7 +266,7 @@ img {
 }
 
 #gallery {
-    padding: 4% 0;
+    padding: 7% 0;
     background: #23DAC8;
 }
 
@@ -284,10 +304,13 @@ img {
 
 
 
-
 /* _____________________________________ */
 /*                  MAP                  */
 /* _____________________________________ */
+
+#map {
+    width: 549px;
+}
 
 .map_container {
     width: 100%;
@@ -330,10 +353,6 @@ img {
     display: none;
 }
 
-.city_detail_container .location_detail {
-    
-}
-
 .map_container .location_info h3 img {
     clear: both;
 }
@@ -355,10 +374,6 @@ img {
     margin-bottom: 0;
     line-height: 2em;
     padding-left: 20px;
-}
-
-.detail_container .location_detail {
-    
 }
 
 
@@ -409,6 +424,34 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #EF5E5E;
 }
+
+
+
+/* _____________________________________ */
+/*               FIXED NAV               */
+/* _____________________________________ */
+
+.scrolled-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    height: 50px;
+    overflow: inherit;
+}
+
+.scrolled-logo img{
+    width: 54%;
+}
+
+.scrolled-nav {
+    width: 49%;
+    font-size: 140%;
+    text-align: right;
+    margin-top: 0;
+}
+
 
 
 /* _____________________________________ */

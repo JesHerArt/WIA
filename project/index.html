@@ -49,9 +49,9 @@ Full Sail University
         
         <!-- AUDIO -->
         <div id="music">
-            <audio>
-                <source src="" type="audio/mpeg" />
-                <source src="" type="audio/ogg" />
+            <audio id="audio" loop>
+                <source src="audio/ice-cream-truck-theme.mp3" type="audio/mpeg" />
+                <source src="audio/ice-cream-truck-theme.ogg" type="audio/ogg" />
                 Audio not supported
             </audio>
         </div>
@@ -109,17 +109,17 @@ Full Sail University
                 
                 <div class="detail-col">
                     <h3>Who are we?</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.</p>
+                    <p>Sonic Swirl Ice Cream was established in 2010 by the Sonic family in Naples, Florida. The ambience thay wanted to portray was the typical "there's no place like home" environment. Through word of mouth, the Sonic family has been able to expand all throughout the state of Florida. Sharing ice cream with this humble family is no doubt customers always feel welcomed into their shops.</p>
                 </div>
 
                 <div class="detail-col">
                     <h3>Our Mission</h3>
-                    <p>Cnon numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <p>Everyone always has a mission and Sonic Swirl's mission is to always make customers feel at home in their welcoming homey-filled environments. They try to design their shops to feel like you're visiting grandma's house. The company also has a tradition of having a surprise flavor of the month. Coming to their suprise flavor events also lets customer stack up points to later redeem them for a free swirl filled cone.</p>
                 </div>
 
                 <div class="detail-col">
                     <h3>Plans to Expand</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    <p>Over five years have passed since Sonic Swirl was brought to life and thanks to their loyal customers they have been able to expand all throughout the state of Florida. But the Sonic family's passion is to continue to expand. Within the next couple of years they want to continue expand throughout the US and also being able to allow others to start their own Franchises as well. Keep checking back to find out about new locations coming to you!</p>
                 </div>
             </div>
         </div> <!-- close about div -->
@@ -215,7 +215,7 @@ Full Sail University
                     <h2><img src="images/cherry.png"> Locations</h2>
                     
                     <div class="map_container">
-                        <img src="images/florida.png" alt="" title="" />
+                        <img id="map" src="images/florida.png" alt="" title="" />
 
                         <!-- Dots -->
                         <a class="dot" style="bottom:40px;  right:20px;" city="homestead"></a>
@@ -471,10 +471,10 @@ Full Sail University
                     <div id="ss-details">
                         <img src="images/logo-pill.png" alt="Sonic Swirl Ice Cream Logo" title="Sonic Swirl Ice Cream Logo">
                         <p>Corporate</p>
-                        <p>address</p>
-                        <p>city, state zip</p>
-                        <p>number</p>
-                        <p>email</p>
+                        <p>100 NW S Sonic Blvd</p>
+                        <p>Miami, Florida 33131</p>
+                        <p>(305) 242-1018</p>
+                        <p>info@sonicswirl.com</p>
                     </div>
                     
                     <div id="social-media">
@@ -499,11 +499,11 @@ Full Sail University
                 <form id="contact-form">
                     <h2><img src="images/cherry.png"> Contact Us</h2>
                     
-                    <input type="text" name="name" placeholder="Full Name" />
-                    <input type="email" name="email" placeholder="Email address" />
-                    <textarea>Drop us a line...</textarea>
+                    <input type="text" name="name" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email address" required />
+                    <textarea id="textBox" placeholder="Drop us a line..." required></textarea>
                     
-                    <input type="submit" name="submit-btn" value="S U B M I T" />
+                    <input type="submit" name="submit-btn" id="submit-btn" value="S U B M I T" />
                 </form>
                 
                 <p id="course-info">&copy; 2015 Jessica J. Hernandez - Student at Full Sail University<br>
