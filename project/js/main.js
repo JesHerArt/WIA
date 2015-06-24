@@ -29,13 +29,13 @@ $(document).ready(function() {
         if (document.getElementById('audio').paused == false) {
             
             document.getElementById('audio').pause();
-            $('#music').css('background-image', 'url(../images/speaker_off.png)');
+            $('#music').css('background-image', 'url(images/speaker_off.png)');
             console.log('music paused');
             
         } else {
             
             document.getElementById('audio').play();
-            $('#music').css('background-image', 'url(../images/speaker_on.png)');
+            $('#music').css('background-image', 'url(images/speaker_on.png)');
             console.log('music playing');
             
         }
