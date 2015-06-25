@@ -1,27 +1,13 @@
-/* CSS Document                             */
-/* Written by Chris Converse for lynda.com  */
-
-@charset "UTF-8";
-
-body { font-family: Arial; font-size: 12px; }
-
-/* Option 1 */
-
-.chart-area .chart-bar { background-repeat: repeat; }
-.chart-area .chart-bar.sporting    { background-color: none; background-image: url(../images/ie_transparency.png); }
-.chart-area .chart-bar.hoursewares { background-color: none; background-image: url(../images/ie_transparency.png); }
-.chart-area .chart-bar.shipping    { background-color: none; background-image: url(../images/ie_transparency.png); }
-.chart-area .chart-bar.clothing    { background-color: none; background-image: url(../images/ie_transparency.png); }
-.chart-area .chart-bar.jewelry     { background-color: none; background-image: url(../images/ie_transparency.png); }
-
-/* Option 2 */
-
-
 /*
-.chart-area .chart-bar.sporting    { background-color: #12473d; }
-.chart-area .chart-bar.hoursewares { background-color: #12473d; }
-.chart-area .chart-bar.shipping    { background-color: #12473d; }
-.chart-area .chart-bar.clothing    { background-color: #12473d; }
-.chart-area .chart-bar.jewelry     { background-color: #12473d; }
+    Jessica J. Hernandez
+    ID: 0004631401
+    June 25, 2015 - The Project
+    Website Interaction & Animation | 201506-01
+    Full Sail University
 */
 
+.chart-area .chart-bar.love         { background-color: #FDB742;}
+.chart-area .chart-bar.coffee       { background-color: #B3CC57;}
+.chart-area .chart-bar.traditional  { background-color: #F92A57;}
+.chart-area .chart-bar.kiwi         { background-color: #23DAC8;}
+.chart-area .chart-bar.nutella      { background-color: #F9D423;}

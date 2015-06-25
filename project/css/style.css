@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
     position: relative;
 }
 
@@ -24,7 +25,9 @@ header {
     box-shadow: 0px 0px 6px #666; 
     overflow: auto;
     z-index: 1000;
-    position: relative;
+    position: absolute;
+    top: 0;
+    background: white;
 }
 
 #cta {
@@ -72,11 +75,11 @@ footer {
     margin-bottom: 7%;
 }
 
-
 #loc_flav {
     width: 100%;
     position: relative;
     overflow: auto;
+    background: #FCF3CD;
 }
 
 #locations, #flavors {
@@ -97,6 +100,11 @@ footer {
     padding-left: 4%;
 }
 
+#placeholder {
+    width: 100%;
+    height: 128px;
+    position: relative;
+}
 
 
 
@@ -131,6 +139,11 @@ nav li {
 nav li:hover {
     color: #23DAC8;
     border-bottom: 2px solid #F9D423;
+}
+
+nav li a {
+    width: 100%;
+    height: 100%;
 }
 
 footer ul {
@@ -379,6 +392,107 @@ img {
 
 
 /* _____________________________________ */
+/*                 CHART                 */
+/* _____________________________________ */
+
+.chart-container { 
+    width: 100%; 
+    border: 1px solid #5a8315; 
+    margin-top: 40px;
+    background: rgba(255,255,255,0.5);
+}
+
+.chart-title { 
+    background-color: #23DAC8; 
+    padding: 2%; 
+    margin: 0 0 30px 0; 
+}
+
+.chart-title p { 
+    margin: 0px; 
+    color: #fff; 
+    text-shadow: 1px 1px 1px #666;
+    text-align: center;
+}
+
+.chart-content { 
+    height: 340px; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 5px 0px 0px 0px; 
+}
+
+.chart-y-axis { 
+    width: 50px; 
+    height: 300px; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+}
+
+.chart-y-axis p { 
+    margin: 0px 0px 0px 10px; 
+    padding: 0px 0px 0px 5px; 
+    width: 35px; 
+    position: absolute; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.chart-x-axis { 
+    height: 50px; 
+    position: absolute; 
+    top: 300px; 
+    left: 60px; 
+}
+
+.chart-x-axis p { 
+    position: absolute; 
+    top: 0px; 
+    width: 100px; 
+    color: #EF746F; 
+    text-align: center; 
+}
+
+.chart-area {
+	width: 91%;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	background: #fff;
+}
+
+.chart-area .chart-bar {
+	position: absolute;
+	bottom: 0px;
+	width: 60px;
+	height: 0px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: 50% bottom;
+}
+
+.chart-area .chart-bar.love         { background-color: #FDB742;}
+.chart-area .chart-bar.coffee       { background-color: #B3CC57;}
+.chart-area .chart-bar.traditional  { background-color: #F92A57;}
+.chart-area .chart-bar.kiwi         { background-color: #23DAC8;}
+.chart-area .chart-bar.nutella      { background-color: #F9D423;}
+
+.chart-area .chart-bar p { 
+    margin: 5px 0px 0px 0px; 
+    text-align: center; 
+    color: #fff; 
+    display: none; 
+}
+
+
+
+/* _____________________________________ */
 /*                 FORMS                 */
 /* _____________________________________ */
 
@@ -451,40 +565,3 @@ input[type="submit"]:hover {
     text-align: right;
     margin-top: 0;
 }
-
-
-
-/* _____________________________________ */
-/*             MEDIA QUERIES             */
-/* _____________________________________ */
-
-@media only screen
-    and (max-width : 899px) {
-     
-      
-        
-    }
-	
-	
-@media only screen
-	and (max-width : 767px) {
-        
-       
-        
-	}
-
-
-@media only screen
-	and (max-width : 580px) {
-        
-        
-        
-    }
-
-
-@media only screen 
-	and (max-width: 414px) {
-        
-        
-
-	}
